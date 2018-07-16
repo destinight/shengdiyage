@@ -15,7 +15,18 @@
 	<name>cms-service</name>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>us.shengdiyage</groupId>
+			<artifactId>cms-facade</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>rpc-sofa-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>healthcheck-sofa-boot-starter</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
