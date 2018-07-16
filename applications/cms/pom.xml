@@ -6,7 +6,7 @@
 	<groupId>us.shengdiyage</groupId>
 	<artifactId>cms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>cms</name>
 	<description>Demo project for Spring Boot</description>
@@ -22,7 +22,20 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.alipay.poc</groupId>
+				<artifactId>cms-facade</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alipay.poc</groupId>
+				<artifactId>cms-service</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,12 +51,12 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+
 		</plugins>
 	</build>
-
+	<modules>
+    	<module>cms-facade</module>
+    	<module>cms-service</module>
+  	</modules>
 
 </project>
