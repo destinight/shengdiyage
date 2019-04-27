@@ -14,9 +14,9 @@ public class CmsQueryFacadeImpl  implements CmsQueryFacade {
         Article article = new Article();
         article.setId(12345);
         article.setPath(path);
-        article.setTitle("静夜思");
-        article.setAuthor("李白");
-        article.setContent("床前明月光，疑是地上霜。举头望明月，低头思故乡。");
+        article.setTitle("Jingle bells");
+        article.setAuthor("Pierpont");
+        article.setContent("Jingle bells, jingle bells, Jingle all the way. ");
         article.setCreateTime(new Date());
         article.setModifyTime(new Date());
         return article;

@@ -12,7 +12,6 @@ public class Article implements Serializable {
 
     private Integer           id;
     private String            path;
-    private String            uniqueId;
     private String            title;
     private String            author;
     private String            content;
@@ -33,14 +32,6 @@ public class Article implements Serializable {
 
     public void setPath(String path) {
         this.path = path;
-    }
-
-    public String getUniqueId() {
-        return uniqueId;
-    }
-
-    public void setUniqueId(String uniqueId) {
-        this.uniqueId = uniqueId;
     }
 
     public String getTitle() {
