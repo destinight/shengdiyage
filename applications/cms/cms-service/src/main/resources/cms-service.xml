@@ -7,7 +7,9 @@
             http://sofastack.io/schema/sofaboot   http://sofastack.io/schema/sofaboot.xsd"
        default-autowire="byName">
     <bean id="cmsQueryFacade" class="us.shengdiyage.cms.service.CmsQueryFacadeImpl"/>
+
     <sofa:service ref="cmsQueryFacade" interface="us.shengdiyage.cms.facade.CmsQueryFacade">
         <sofa:binding.bolt/>
     </sofa:service>
+
 </beans>

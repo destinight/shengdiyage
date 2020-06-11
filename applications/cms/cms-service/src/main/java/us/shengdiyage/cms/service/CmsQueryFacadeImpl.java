@@ -19,6 +19,11 @@ public class CmsQueryFacadeImpl  implements CmsQueryFacade {
         article.setContent("Jingle bells, jingle bells, Jingle all the way. ");
         article.setCreateTime(new Date());
         article.setModifyTime(new Date());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return article;
     }
 }

@@ -26,9 +26,10 @@ public class PortalApplication {
 		ApplicationContext applicationContext =  SpringApplication.run(PortalApplication.class, args);
 		CmsQueryFacade cmsQueryFacade = applicationContext.getBean(CmsQueryFacade.class);
 		while (true){
-			Thread.sleep(20000);
-			cmsQueryFacade.getArticleByPath(new Date().toString());
-
+			Thread.sleep(5000);
+			for(int i=0;i<100;i++) {
+				//cmsQueryFacade.getArticleByPath(new Date() + " " +i);
+			}
 		}
 	}
 }

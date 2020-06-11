@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: portal
-          image: shengdiyage-portal:201810071505
-          imagePullPolicy: IfNotPresent
+          image: shengdiyage-portal:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 8081
           readinessProbe:
