@@ -20,7 +20,7 @@ public class CmsQueryFacadeImpl  implements CmsQueryFacade {
         article.setCreateTime(new Date());
         article.setModifyTime(new Date());
         try {
-            Thread.sleep(2000);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
